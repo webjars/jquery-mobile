@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-mobile</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.3.0</version>
     <name>jQuery Mobile</name>
     <description>WebJar for jQuery Mobile</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/jquery-mobile</url>
         <connection>scm:git:https://github.com/webjars/jquery-mobile.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-mobile.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-mobile-1.3.0</tag>
     </scm>
 
     <developers>
@@ -88,16 +88,16 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jquery.mobile-${upstream.version}" excludes="demos/"/>
+                                    <fileset dir="${project.build.directory}/jquery.mobile-${upstream.version}" excludes="demos/" />
                                 </move>
-                                <move file="${destDir}/jquery.mobile-${upstream.version}.min.css" toFile="${destDir}/jquery.mobile.min.css"/>
-                                <move file="${destDir}/jquery.mobile-${upstream.version}.css" toFile="${destDir}/jquery.mobile.css"/>
-                                <move file="${destDir}/jquery.mobile.theme-${upstream.version}.min.css" toFile="${destDir}/jquery.mobile.theme.min.css"/>
-                                <move file="${destDir}/jquery.mobile.theme-${upstream.version}.css" toFile="${destDir}/jquery.mobile.theme.css"/>
-                                <move file="${destDir}/jquery.mobile.structure-${upstream.version}.min.css" toFile="${destDir}/jquery.mobile.structure.min.css"/>
-                                <move file="${destDir}/jquery.mobile.structure-${upstream.version}.css" toFile="${destDir}/jquery.mobile.structure.css"/>
-                                <move file="${destDir}/jquery.mobile-${upstream.version}.min.js" toFile="${destDir}/jquery.mobile.min.js"/>
-                                <move file="${destDir}/jquery.mobile-${upstream.version}.js" toFile="${destDir}/jquery.mobile.js"/>
+                                <move file="${destDir}/jquery.mobile-${upstream.version}.min.css" toFile="${destDir}/jquery.mobile.min.css" />
+                                <move file="${destDir}/jquery.mobile-${upstream.version}.css" toFile="${destDir}/jquery.mobile.css" />
+                                <move file="${destDir}/jquery.mobile.theme-${upstream.version}.min.css" toFile="${destDir}/jquery.mobile.theme.min.css" />
+                                <move file="${destDir}/jquery.mobile.theme-${upstream.version}.css" toFile="${destDir}/jquery.mobile.theme.css" />
+                                <move file="${destDir}/jquery.mobile.structure-${upstream.version}.min.css" toFile="${destDir}/jquery.mobile.structure.min.css" />
+                                <move file="${destDir}/jquery.mobile.structure-${upstream.version}.css" toFile="${destDir}/jquery.mobile.structure.css" />
+                                <move file="${destDir}/jquery.mobile-${upstream.version}.min.js" toFile="${destDir}/jquery.mobile.min.js" />
+                                <move file="${destDir}/jquery.mobile-${upstream.version}.js" toFile="${destDir}/jquery.mobile.js" />
                             </target>
                         </configuration>
                     </execution>
