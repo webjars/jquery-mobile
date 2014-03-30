@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-mobile</artifactId>
-    <version>1.4.2-SNAPSHOT</version>
+    <version>1.4.2</version>
     <name>jQuery Mobile</name>
     <description>WebJar for jQuery Mobile</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/jquery-mobile</url>
         <connection>scm:git:https://github.com/webjars/jquery-mobile.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-mobile.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-mobile-1.4.2</tag>
     </scm>
 
     <developers>
@@ -86,7 +86,7 @@
                         <configuration>
                             <target>
                                 <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${tmpDir}"/>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${tmpDir}" />
                                 <echo message="moving resources" />
                                 <move file="${tmpDir}/images" toDir="${destDir}" />
                                 <move file="${tmpDir}/jquery.mobile-${upstream.version}.min.map" toFile="${destDir}/jquery.mobile.min.map" />
