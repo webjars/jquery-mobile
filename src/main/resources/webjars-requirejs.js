@@ -1,8 +1,4 @@
-/*global requirejs */
-
-// Ensure any request for this webjar brings in jQuery.
 requirejs.config({
-    shim: {
-        "jquery.mobile": [ 'webjars!jquery.js' ]
-    }
+    paths: { "jquery-mobile": webjars.path("jquery-mobile", "jquery.mobile") },
+    shim: { "jquery-mobile": [ "jquery" ] }
 });
